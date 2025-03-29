@@ -13,10 +13,10 @@
 - Access osTicket Inventory Manager with the API to create/update assets. A possible usecase for the API is to allow your imaging server to automatically create/update assets.
 
 ## Requirements
-- PHP version 8.0 (PHP v8.1 is not supported)
+- PHP version 8.0 plus
 - Apache or IIS (NGINX is not supported)
 - MySQL database 5.5
-- osTicket v1.16.1
+- osTicket v1.16.1 plus
 
 ## Installation
 1. Download and Unzip the osTicket Inventory Manager plugin.
@@ -24,8 +24,10 @@
 3. From the Inventory Manager Plugin root, copy the dispatcher.php file to your osTicket/scp directory.
 4. Navigate to Admin Panel > Manage > Plugins. Choose "Add a New Plugin".
 5. Select the osTicket Inventory Plugin and click install.
-6. Enable the plugin.
-8. You can now access the plugin interface from Agent Panel > Applications > Inventory.
+6. Enable the plugin. (More>Enable)
+7. Instances Add New Instance > Name: Inventory, Status: Enabled >
+8. Config Check box Staff backend interface > Custom Form Name: Inventroy > Add Instances
+9. You can now access the plugin interface from Agent Panel > Applications > Inventory.
 
 ## API Setup
 - To enable the API for Asset Creation, you must first complete the following setup on your webserver. This process is required due to the osTicket Inventory Plugin being inaccessible to Single Sign On authentication for security purposes.
